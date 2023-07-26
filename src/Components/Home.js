@@ -1,3 +1,11 @@
+/**
+ * This is a React component that renders a todo list with the ability to add, mark as completed, and
+ * delete items.
+ * @returns The Home component is returning a JSX element, which consists of an input field, a button,
+ * and a mapping of the todos array. Each todo item is rendered as a div element containing a Link
+ * component, a button for changing the status, and a button for deleting the todo item.
+ */
+
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -27,6 +35,7 @@ export default function Home() {
   const handleDelete = (i) => {
     dispatch(changeDelete(i));
   };
+
 
   return (
     <div>
